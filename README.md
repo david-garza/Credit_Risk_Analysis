@@ -15,8 +15,51 @@ Throughout the analysis the following values are used to identify a loan applica
 
 # Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
+## Balanced Accuracy
+
+### Sampling Methods
+
+![Sampling](./resources/accuracy_sample.PNG)
+
+Of the sampling strategies, both SMOTE and SMOTEENN performed the best.
+
+### Ensemble Methods
+
+![Ensemble](./resources/accuracy_ensemble.PNG)
+
+Of the ensemble methods, Easy Ensemble Classifier performed the best.
+
+## Classification Reports
+
+### Oversampling
+![Over](./resources/over.PNG)
+
+### SMOTE 
+
+![SMOTE](./resources/SMOTE.PNG)
+
+### Undersampling
+
+![Under](./resources/under.PNG)
+
+### SMOTEENN
+
+![SMOTEENN](./resources/SMOTEENN.PNG)
+
+### Balanced Random Forest Classifier
+
+![BRFC](./resources/brfc.PNG)
+
+### Easy Ensemble Classifier
+
+![EEC](./resources/eec.PNG)
 
 # Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+The three best performing models by balanced accuracy are SMOTE, SMOTEENN, and Easy Ensemble Classifier. Of these three, SMOTE and SMOTEENN have F1 scores in high risk detection of 0.06 and 0.05 respectfully.
+
+Both the SMOTE and SMOTEENN have senstivities of 0.71 and 0.72 for high risk. Given that high risk loan applicants are rare, these models could be useful. A review of their confusion matrices provides further details about their performance.
+
+## SMOTE
+
+## SMOTEENN
