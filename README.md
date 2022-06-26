@@ -6,9 +6,9 @@ The purpose of this analysis is to create a machine learning model that can accu
 
 The challenge unique to this dataset is the occurance of high risk loan applicants is very low. This makes it difficult for any model to accurately predict and identify high risk applicants. 
 
-To overcome this issue, 4 different sampling methods and 2 ensemble are applied to the modeling.
+To overcome this issue, 4 different sampling methods and 2 ensemble models are applied to the model and fitting.
 
-Throughout the analysis the following values are used to identify a loan applicants status:
+Throughout the analysis the following values are used to identify a loan applicant's status:
 
 0 = high risk,
 1 = low risk
@@ -62,7 +62,7 @@ Both the SMOTE and SMOTEENN have senstivities of 0.71 and 0.72 for high risk. Gi
 
 The best over all model was the easy ensemble classifier with an F1 of 0.14 for high risk loan applicants. 
 
-A review all 3 confusion matrices are provided blow:
+A review of all 3 confusion matrices are provided blow:
 
 ## SMOTE
 
@@ -76,10 +76,10 @@ A review all 3 confusion matrices are provided blow:
 
 ![EEC CM](./resources/EEC_cm.PNG)
 
-The model recommendation is based on the following assumption, the occurance of high risk loan applicants is very low. Therefore, the model should be baised towards approving more loans than denying loans.
+Model recommendation is based on the following assumption, the occurance of high risk loan applicants is very low. Therefore, the model should be baised towards approving more loans than denying loans.
 
-The model that does that the best is the easy ensemeble classifier. It identifies most loan applicants as low risk. Also, its improved sensitivity to high risk improves its accuracy in detecting when a high risk occurs.
+The model that does that  best is the easy ensemeble classifier. It identifies most loan applicants as low risk. Also, its improved sensitivity to high risk strengths its chances of catching more high risk applicants.
 
 The number of false denials is greatly reduced. This helps reduce the work load on loan officers to manually evaluate loan denials to verify if the customer should be truly denied.
 
-Recommended model is **easy ensemble classifier**.
+Therefore the recommended model is **easy ensemble classifier**.
